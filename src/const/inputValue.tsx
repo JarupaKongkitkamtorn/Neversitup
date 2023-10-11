@@ -9,6 +9,7 @@ export const inputValueTest3 = [
 ];
 
 export const inputValueTest4 = [
+  [],
   [":)", ";(", ";}", ":-D"],
   [";D", ":-(", ":-)", ";~)"],
   [";]", ":[", ";*", ":$", ";-D"],

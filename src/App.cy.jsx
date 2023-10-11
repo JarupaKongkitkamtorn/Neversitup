@@ -25,10 +25,20 @@ it("Test 3", () => {
 });
 
 it("Test 4", () => {
-  // for (let i = 0; i < inputValueTest2.length; i++) {
-  //   cy.wrap(handleLogicTest2(inputValueTest2[i])).should(
-  //     "have.length",
-  //     factorial(inputValueTest2[i].length)
-  //   );
-  // }
+  for (let i = 0; i < inputValueTest4.length; i++) {
+    if (inputValueTest4[i].length === 0) {
+      cy.wrap(handleLogicTest4(inputValueTest4[i]))
+        .then((res) => res.time)
+        .should("eq", 0);
+    } else {
+      cy.wrap(handleLogicTest4(inputValueTest4[i]))
+        .then(
+          (res) =>
+            res.result.filter(
+              (item) => !item.includes(")") && !item.includes("D")
+            ).length
+        )
+        .should("eq", 0);
+    }
+  }
 });

@@ -12,7 +12,6 @@ function test4() {
     }));
     setValue(resultValue);
   }, []);
-  console.log(value);
   return (
     <div className="test">
       <div className="divQ">
@@ -61,7 +60,7 @@ function test4() {
         value.map((item, id) => (
           <div className="result" key={id}>
             countSmileys(<b>{item.testValue}</b>) // should return{" "}
-            <b>{item.results}</b>;
+            <b>{item.results.time}</b>;
           </div>
         ))}
     </div>
