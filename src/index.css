@@ -1,0 +1,29 @@
+body {
+  margin: 0;
+  font-family: Roboto !important;
+}
+.container {
+  margin: 2% auto;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+.header {
+  font-size: 2rem;
+  font-weight: 600;
+}
+.question {
+  font-size: 1.25rem;
+}
+.divQ {
+  margin: 16px 0px;
+}
+.result {
+  font-size: 1.125rem;
+}
+.header-result {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.test {
+  margin-bottom: 40px;
+}
