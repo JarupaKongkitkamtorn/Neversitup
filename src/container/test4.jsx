@@ -30,24 +30,30 @@ function test4() {
           <ul>
             <li>
               Each smiley face must contain a valid pair of eyes. Eyes can be
-              marked as : or ;
+              marked as <b>:</b> or <b>;</b>
             </li>
             <li>
               A smiley face can have a nose but it does not have to. Valid
-              characters for a nose are - or ~
+              characters for a nose are <b>-</b> or <b>~</b>
             </li>
             <li>
               Every smiling face must have a smiling mouth that should be marked
-              with either {")"} or D
+              with either <b>{")"}</b> or <b>D</b>
             </li>
           </ul>
           No additional characters are allowed except for those mentioned.
         </div>
         <div className="question">
-          Valid smiley face examples: :{")"} :D ;-D :~{")"}
+          Valid smiley face examples:{" "}
+          <b>
+            :{")"} :D ;-D :~{")"}
+          </b>
         </div>
         <div className="question">
-          Invalid smiley faces: ;{"("} :{">"} :{"}"} :{"]"}
+          Invalid smiley faces:{" "}
+          <b>
+            ;{"("} :{">"} :{"}"} :{"]"}
+          </b>
         </div>
         <div className="question">
           Note. In case of an empty array return 0. You will not be tested with
